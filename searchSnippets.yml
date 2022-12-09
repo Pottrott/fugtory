@@ -1,19 +1,20 @@
 noMale: '!cfnm & !cmnf & !female.on.male & !female.rimming.male & !black.male.white.female & !male.pissing.on.female & !big.black.cock & !bbc.worship & !big.dick & !maledom & !shaved.male & !male.on.transwoman & !male.on.transwoman.on.female & !transwoman.blowing.male & !male.rimming.transwoman & !mother.son & !older.female.younger.male & !cumshot & !hairy.male & !hairy.man & !hairy.balls & !blowjob & !white.female.white.male & !white.male & !missionary & !vaginal.sex & !straight & !tit.fuck & !ffm & !fmm & !mmf & !mff & !male.completion & !masked.guy'
 noBetaMale: '!cunnilingus & !kissing & !male.rimming.female & !pussy.to.mouth & !cock.and.ball.torture'
 noToys: '!dildo & !dildo.masturbation & !dildo.sucking & !vibrator & !toys'
+solo: solo | solo.only | solo.female | solo.male
 pov: pov | pov.only | gonzo | femdom.pov | humiliation.pov | humiliationpov | toilet.pov | cuckold.pov | pov.strap.on | pov.strapon | pov.pegging | pov.humiliation | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.facesitting | pov.shit | pov.fucking | pov.strapon | cock.pov | pov.forced.cum.eating | pov.ass.worship | joi.pov
-povOrSolo: solo | solo.only | solo.female | solo.male | pov | pov.only | gonzo | femdom.pov | humiliation.pov | humiliationpov | toilet.pov | cuckold.pov | pov.strap.on | pov.strapon | pov.pegging | pov.humiliation | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.facesitting | pov.shit | pov.fucking | pov.strapon | cock.pov | pov.forced.cum.eating | pov.ass.worship | joi.pov
+povOrSolo: '{{{pov}} | {{{solo}}}'
 domina: dominatrix | female.domination | female.bully | female.dominatrix
 shemale: trans | transsexual | trans.sexual | shemale | she.male | shemales | tranny | trannies | dickgirl | dick.girl | hermaphrodite
-lesbian: lesbian | only.girls | girl.on.girl | girls.on.girl | girls.kissing | woman.on.woman | women.on.woman | girlsoutwest.com
+lesbian: lesbian | only.girls | girl.on.girl | girls.on.girl | girls.kissing | woman.on.woman | women.on.woman | lesbian.seduction | lesbian.love | powerfetish.com | queensnake.com | girlsoutwest.com
 lesbianGraceful: '{{{lesbian}}} | transwoman.on.transwoman | transwoman.on.girl | girl.on.transwoman | transgirl.on.transgirl | transgirl.on.girl | girl.on.transgirl | transwoman.on.woman | woman.on.transwoman'
 lesdom: female.pissing.on.female | lesbian.domination | female.on.transwoman | lesdom | lezdom | lezdom.sex
-gross: snot | snot.eating | phlegm | piss.drinking | spit.covered | spit.bukkake | bukkake.pee | gross | smelly.feet | fart | face.farting | scat | scat.slave | scat.domination | dirty.feet | burp | urination.domination | ass.cleaning | feet.cleaning | nasty | nasty.filth | period | period.blood
+gross: snot | snot.eating | phlegm | piss.drinking | spit.covered | spit.bukkake | bukkake.pee | gross | smelly.feet | fart | face.farting | scat | scat.slave | scat.domination | dirty.feet | burp | urination.domination | ass.cleaning | feet.cleaning | nasty | nasty.filth | period | period.blood | cornea | vomit
 foreskin: uncircumcised | uncircumcised.dick | foreskin.play | tongue.in.foreskin | phimosis
 smegma: smegma | smeggy | dick.cheese | cock.cheese | nob.cheese | nobcheese
-bbw: bbw | fat | fatty | ssbbw
+bbw: bbw | fat | fatty | {{{ssbbw}}}
+ssbbw: ssbbw | obese | obesity
 lezdom: lesbian.domination | female.dominating.female | woman.dominating.woman | lesdom | lezdom | transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl | transgirl.dominating.female | female.dominating.transgirl | transgirl.dominating.transgirl
-ssbbw: ssbbw
 hairyBody: hairy.pussy | hairy.pubic.hair | bush.pussy | dyed.hairy.pussy | hairy.ass | hairy.asshole | pussy.hair | dyed.hairy.pussy | full.bush | red.bush | blonde.bush | pink.bush | hairy.pussy.bush | natural.bush) & (unshaved | unshaven | hairy.armpits | hairy.legs | hairy.tits | hairy.breasts | hairy.belly | hairy.stomach | armpit.hair
 animated: (cgi | 3d | 3d.animation | 3dcg | blender | sfm | sourcefilmmaker | source.film.maker | source.filmmaker) & !game & !vr & !vr.porn & !virtual.reality
 genitalCloseup: pussy.closeup | genitals.closeup | genital.closeup | ass.closeup | anus.closeup | asshole.closeup | clit.closeup | butt.closeup
