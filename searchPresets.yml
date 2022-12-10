@@ -1,0 +1,92 @@
+- name: Current
+  query: pov | pov.only | gonzo | femdom.pov | humiliation.pov | humiliationpov | toilet.pov | cuckold.pov | pov.strap.on | pov.strapon | pov.pegging | pov.humiliation | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.facesitting | pov.shit | pov.fucking | pov.strapon | cock.pov | pov.forced.cum.eating | pov.ass.worship | joi.pov | solo | solo.only | solo.female | solo.male | lesbian | only.girls | girl.on.girl | girls.on.girl | girls.kissing | woman.on.woman | women.on.woman | lesbian.seduction | lesbian.love | powerfetish.com | queensnake.com | girlsoutwest.com | transwoman.on.transwoman | transwoman.on.girl | girl.on.transwoman | transgirl.on.transgirl | transgirl.on.girl | girl.on.transgirl | transwoman.on.woman | woman.on.transwoman & !vr & !vr.porn & !virtual.reality & !censored & (1080p | 1440p | 2160p | 2880p | 4320p | full.hd | 4k | 8k) & !invalid.tag
+- name: Personal taste
+  query: ((lesbian | lezdom | lesbian.domination | solo) | (!cunnilingus & !massage & !kissing))
+- name: German
+  query: '{{{german}}}'
+- name: Lesbian
+  query: ({{{lesbian}}})
+- name: Lesbian graceful
+  query: ({{{lesbianGraceful}}})
+- name: Lesbian a
+  query: '{{{povOrSolo}}} | {{{lesbianGraceful}}}'
+- name: Default Pornbay
+  query: ({{{povOrSolo}}}) | ({{{lesdom}}})
+- name: Default Femdomcult
+  query: ({{{povOrSolo}}}) | ({{{lesdom}}})
+- name: Clip sites
+  query: (manyvids | manyvids.com | scatshop | scatshop.com | apclips | apclips.com | clips4sale | clips4sale.com | iwantclips | iwantclips.com | scatshop | scatshop.com | femscat | femscat.com | scatbook | scatbook.com | pornhub | pornhub.com)
+- name: POV
+  query: '{{{povOrSolo}}}'
+- name: Taker POV
+  query: ((herpov | her.pov | femalepov | female.pov) & (blowjob | deepthroat | deep.throat | facefuck | face.fuck | female.rimming.male) & !cunnilingus) | reverse.pov | strapon.pov | strap.on.pov
+- name: Toy fucking
+  query: '{{{fuckToy}}}'
+- name: GGG
+  query: (ggg | germangoogirls.com) & (female.rimming.male | piss.drinking)
+- name: Killer
+  query: ({{{povOrSolo}}}) & ({{{killer}}}) & (drown | drowning | towel | towel.fetish | gas | gaskmask | gas.mask | beatdown | beat.down | knife | rope | asphyxiation | breathplay |  breath.play | scat | piss | pissing | smoking | foot.smother | toilet.slave | belt | sword | hammer | axe | hatchet | choking | strangle | strangling | smother | smothering | ass.smothering | face.smothering | boob.smother | boob.smothering | tit.smother | tit.smothering | breast.smother | breast.smothering | foot.smother | foot.smotherhing | pussy.smother | pussy.smothering | extreme.smother | extreme.smothering | facesitting | face.sitting | intoxication | intoxicated | poison | poisoned) & !suicide.encouragement
+- name: Food orgy
+  query: ({{{food}}}) & ({{{messy}}})
+- name: Animated
+  query: '{{{animated}}}'
+- name: Lezdom
+  query: ({{{lezdom}}})
+- name: Hardcore Lezdom
+  query: ({{{lezdom}}}) & {{{hardcoreBdsm}}}
+- name: Hardcore BDSM
+  query: '{{{hardcoreBdsm}}}'
+- name: Tranny
+  query: ({{{shemale}}}) & (solo | solo.transwoman | solo.trans | transwoman.on.transwoman | transwoman.on.female | female.on.transwoman) & {{{noMale}}}
+- name: Tranny Foreskin
+  query: ({{{shemale}}}) & (solo | solo.transwoman | solo.trans | transwoman.on.transwoman | transwoman.on.female | female.on.transwoman) & ({{{foreskin}}}) & {{{noMale}}}
+- name: Fat Hairy
+  query: '{{{bbw}}} & {{{hairyBody}}} & {{{noMale}}}'
+- name: Transdom
+  query: ({{{shemale}}}) & (shemale.domination | transwoman.domination) & {{{noMale}}}
+- name: Foreskin
+  query: '{{{foreskin}}}'
+- name: Hairy Girl
+  query: '{{{hairyBody}}} & {{{noMale}}}'
+- name: Asshole closeup
+  query: ({{{povOrSolo}}}) & (male.asshole.closeup | asshole.closeup | anus.closeup | male.anus.closeup)
+- name: Pussy closeup
+  query: ({{{povOrSolo}}}) & (vagina.closeup | pussy.closeup | pusy.closeup) & {{{noMale}}}
+- name: Cock closeup
+  query: ({{{povOrSolo}}}) & (cock.closeup | dick.closeup | closeup.cumshot)
+- name: Mouth abuse
+  query: (facefuck | face.fuck | forced.deepthroat | throatfuck | throat.fuck) & (gagging | asstomouth | ass.to.mouth | sloppy.blowjob) & (rough | rough.blowjob | rough.oral | facialabuse.com | swallowed.com | throated.com | dickdrainers.com) & {{{noBetaMale}}}
+- name: BBW
+  query: ({{{bbw}}}) & {{{noMale}}}
+- name: BBW showing body
+  query: ({{{bbw}}}) & {{{noToys}}} & {{{noMale}}}
+- name: SSBBW Closeup
+  query: ({{{ssbbw}}}) & ({{{genitalCloseup}}}) & {{{noMale}}}
+- name: Closeup
+  query: ({{{genitalCloseup}}}) & {{{noMale}}}
+- name: Scat
+  query: ({{{povOrSolo}}}) & (scat | feces | poop | pooping | closeup.shit) & {{{noMale}}}
+- name: Clean Unwiped
+  query: ({{{povOrSolo}}}) & (human.toilet.paper | ass.cleaning | dirty.asshole | unwiped | unwiped.asshole) & {{{noMale}}}
+- name: Toilet POV
+  query: ({{{povOrSolo}}}) & (toilet | human.toilet | toilet.slave | on.toilet | toilet.fetish | toilet.cam | toiletcam | toilet.gloryhole) & (scat | piss | piss.in.mouth | pissing | piss.drinking | piss.play | piss.enema | enema | piss.in.toilet | fart | farting | period.blood | period) & {{{noMale}}}
+- name: Granny
+  query: (granny | gilf) & {{{noMale}}}
+- name: Rimming
+  query: (female.rimming.male | girlsrimming.com | anal.rim | ass.rim | rimming | female.rim | female.rimming) & {{{noBetaMale}}}
+- name: Cuck POV
+  query: ({{{povOrSolo}}}) & (cuckold.pov | pov.cuckold)
+- name: Cuck POV Advanced
+  query: ({{{povOrSolo}}}) & (cuck | cuckold | cuckold.humiliation | cuckold.pov | pov.cuckold | cucky | cucked | cuckold.training | cuckold.joi) & (cuckold.cleanup | cum.eating.cuckold | ass.worship | forced.bi | blowjob | deepthroat | face.fuck | facefuck) & (cum.in.mouth | creampie | cum.on.ass | anal.creampie | creampie.eating | dripping.creampie | leaking.creampie | anal.creampie.eating | rectal.creampie | eating.creampie | condom.creampie | condom.cum.eating | used.condom | condom.swallow | cuckold.condom.eating)
+- name: Creampie cleaning
+  query: ({{{povOrSolo}}}) & (cuckold | cuckold.fantasy | cuckold.humiliation | cuck | cuckold.pov | pov.cuckold | cucky) & (creampie | pov.forced.cum.eating | cuckold.cleanup | virtual.creampie.eating | creampie.pov | vaginal.creampie.eating | creampie.cleanup | cum.eating.cuckold | creampie.eating | anal.creampie.eating | eating.creampie | vaginal.creampie | cei | cum.eating.instruction | cum.eating.instructions | forced.cum.eating | male.cum.eating | cum.cleaning | cum.clean.up | condom.clean-up)
+- name: Condom drinking
+  query: ({{{povOrSolo}}}) & (condom.creampie | condom.cum.eating | used.condom | condom.swallow | cuckold.condom.eating | dirty.condom | dirty.condom.humiliation | dirty.condom.disposal | condom.clean-up)
+- name: Painal
+  query: (anal | analfuck | anal.fuck | anal.stretching | rough.anal) & (screaming | punishment | asshole.pain | endurance.challenge) & {{{noBetaMale}}}
+- name: Domina
+  query: ({{{povOrSolo}}}) & ({{{domina}}}) & (humiliation | verbal.humiliation | slave.training | cum.eating.instructions | pussy.closeup | extreme.closeup | ass.closeup | genitals.closeup | butt.closeup | anus.closeup | asshole.upclose | upclose.asshole | close.up.peeing) & {{{noMale}}}
+- name: Female Grossdom
+  query: ((({{{povOrSolo}}}) & ({{{domina}}})) | ({{{lesdom}}})) & ({{{gross}}}) & {{{noMale}}}
+- name: Smegma
+  query: ({{{smegma}}}) & {{{noBetaMale}}}
