@@ -4,9 +4,9 @@
   query: '{{{german}}}'
 - name: Lesbian
   query: ({{{lesbian}}})
-- name: Lesbian graceful
+- name: Lesbian (+ trans)
   query: ({{{lesbianGraceful}}})
-- name: Lesbian a
+- name: Lesbian (+ trans, + solo, + pov)
   query: '{{{povOrSolo}}} | {{{lesbianGraceful}}}'
 - name: Default Pornbay
   query: ({{{povOrSolo}}}) | ({{{lesdom}}})
