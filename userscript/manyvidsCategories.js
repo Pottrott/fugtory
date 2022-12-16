@@ -1,19 +1,3 @@
-// ==UserScript==
-// @name         Manyvids favorite categories
-// @namespace    http://tampermonkey.net/
-// @version      1.0.0
-// @description  try to take over the world!
-// @author       You
-// @match        *://www.manyvids.com/Profile/*/Store/Videos
-// @match        *://www.manyvids.com/Profile/*/Store/Videos/
-// @match        *://www.manyvids.com/Accepted-Categories/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=manyvids.com
-// @run-at       document-idle
-// @require      https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.min.js
-// @resource     manyvidsCategories https://raw.githubusercontent.com/Pottrott/fugtory/main/manyvidsCategories.yml?v=1
-// @grant        GM_getResourceText
-// ==/UserScript==
-
 const getYamlResource = id => {
   return jsyaml.load(GM_getResourceText(id))
   }
@@ -54,7 +38,6 @@ cursor: pointer;
   const container = document.querySelector("#favoriteCategories")
 
   const categoryElements = Array.from(document.querySelectorAll("div.drop-down-list .filter-panel__item"))
-  console.dir(categoryElements.length)
   const categories = []
   for (const categoryElement of categoryElements) {
   const elementText = categoryElement.textContent
@@ -65,14 +48,23 @@ cursor: pointer;
   if (!favorites.includes(regexResult.groups.name.toLowerCase())) {
    continue
   }
+  categories.push({
+    categoryElement,
+    name: regexResult.groups.name,
+    count: Number(regexResult.groups.count)
+  })
+}
+const categoriesSorted = _.orderBy(categories, ["count", "name"], "desc")
+for (const category of categoriesSorted) {
+  if (category.count > 1)
+  category.name = category.name + " (" + category.count + ")"
   const button = document.createElement("a")
-  console.dir(button)
-  button.innerText = regexResult.groups.name + " (" + regexResult.groups.count + ")"
+  button.innerText = category.name
   button.addEventListener("click", () => {
-  categoryElement.click()
+  category.categoryElement.click()
   })
   container.appendChild(button)
-  }
+}
 }
 
 const processCategoriesPage = () => {
