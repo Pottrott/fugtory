@@ -1,3 +1,26 @@
+const removeSnatcheda = () => {
+  const torrents = Array.from(document.querySelectorAll(".torrent")).map(element =>  {
+    const nameElement = element.querySelector("td > a:visited")
+    const iconElement = element.querySelector(".icon")
+    let state = null
+    if (iconElement.classList.contains("icon_disk_grabbed"))
+state = "grabbed"
+      return {state,nameElement}
+  })
+console.dir(torrents)
+}
+
+const removeSnatched = () => {
+  GM_addStyle(`
+  .torrent:has(a:visited) {
+    display: none;
+  }
+  .torrent:has(.icon_disk_grabbed, .icon_disk_snatched, .icon_disk_leech, .icon_warning) {
+    display: none;
+  }
+  `)
+}
+
 window.main = () => {
   document.querySelector("#filter_slidetoggle").insertAdjacentHTML("afterEnd", "<div id=pottrott><div id=searchPresets></div><div id=foundTags></div></div>")
 
@@ -149,5 +172,6 @@ color: #a4a4ff;
 
   GM_addStyle(css)
 
+  removeSnatched()
 
 }
