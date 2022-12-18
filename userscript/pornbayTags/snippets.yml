@@ -9,13 +9,12 @@ domina: dominatrix | female.domination | female.bully | female.dominatrix
 shemale: trans | transsexual | trans.sexual | shemale | she.male | shemales | tranny | trannies | dickgirl | dick.girl | hermaphrodite
 lesbian: lesbian | only.girls | girl.on.girl | girls.on.girl | girls.kissing | woman.on.woman | women.on.woman | lesbian.seduction | lesbian.love | powerfetish.com | queensnake.com | girlsoutwest.com
 lesbianGraceful: '{{{lesbian}}} | transwoman.on.transwoman | transwoman.on.girl | girl.on.transwoman | transgirl.on.transgirl | transgirl.on.girl | girl.on.transgirl | transwoman.on.woman | woman.on.transwoman'
-lesdom: female.pissing.on.female | lesbian.domination | female.on.transwoman | lesdom | lezdom | lezdom.sex
 gross: snot | snot.eating | phlegm | piss.drinking | spit.covered | spit.bukkake | bukkake.pee | gross | smelly.feet | fart | face.farting | scat | scat.slave | scat.domination | dirty.feet | burp | urination.domination | ass.cleaning | feet.cleaning | nasty | nasty.filth | period | period.blood | cornea | vomit
 foreskin: uncircumcised | uncircumcised.dick | foreskin.play | tongue.in.foreskin | phimosis
 smegma: smegma | smeggy | dick.cheese | cock.cheese | nob.cheese | nobcheese
 bbw: bbw | fat | fatty | {{{ssbbw}}}
 ssbbw: ssbbw | obese | obesity
-lezdom: lesbian.domination | female.dominating.female | woman.dominating.woman | lesdom | lezdom | transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl | transgirl.dominating.female | female.dominating.transgirl | transgirl.dominating.transgirl
+lezdom: lesbian.domination | female.dominating.female | woman.dominating.woman | lesdom | lezdom | (domination & (transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl)) | transgirl.dominating.female | female.dominating.transgirl | transgirl.dominating.transgirl | female.pissing.on.female
 hairyBody: hairy.pussy | hairy.pubic.hair | bush.pussy | dyed.hairy.pussy | hairy.ass | hairy.asshole | pussy.hair | dyed.hairy.pussy | full.bush | red.bush | blonde.bush | pink.bush | hairy.pussy.bush | natural.bush) & (unshaved | unshaven | hairy.armpits | hairy.legs | hairy.tits | hairy.breasts | hairy.belly | hairy.stomach | armpit.hair
 animated: (cgi | 3d | 3d.animation | 3dcg | 3dart | anime | blender | sfm | sourcefilmmaker | source.film.maker | source.filmmaker) & !game & !vr & !vr.porn & !virtual.reality
 genitalCloseup: pussy.closeup | genitals.closeup | genital.closeup | ass.closeup | anus.closeup | asshole.closeup | clit.closeup | butt.closeup

@@ -9,9 +9,9 @@
 - name: Lesbian (+ trans, + solo, + pov)
   query: '{{{povOrSolo}}} | {{{lesbianGraceful}}}'
 - name: Default Pornbay
-  query: ({{{povOrSolo}}}) | ({{{lesdom}}})
+  query: ({{{povOrSolo}}}) | ({{{lezdom}}})
 - name: Default Femdomcult
-  query: ({{{povOrSolo}}}) | ({{{lesdom}}})
+  query: ({{{povOrSolo}}}) | ({{{lezdom}}})
 - name: Clip sites
   query: (manyvids | manyvids.com | scatshop | scatshop.com | apclips | apclips.com | clips4sale | clips4sale.com | iwantclips | iwantclips.com | scatshop | scatshop.com | femscat | femscat.com | scatbook | scatbook.com | pornhub | pornhub.com)
 - name: POV
@@ -85,6 +85,6 @@
 - name: Domina
   query: ({{{povOrSolo}}}) & ({{{domina}}}) & (humiliation | verbal.humiliation | slave.training | cum.eating.instructions | pussy.closeup | extreme.closeup | ass.closeup | genitals.closeup | butt.closeup | anus.closeup | asshole.upclose | upclose.asshole | close.up.peeing) & {{{noMale}}}
 - name: Female Grossdom
-  query: ((({{{povOrSolo}}}) & ({{{domina}}})) | ({{{lesdom}}})) & ({{{gross}}}) & {{{noMale}}}
+  query: ((({{{povOrSolo}}}) & ({{{domina}}})) | ({{{lezdom}}})) & ({{{gross}}}) & {{{noMale}}}
 - name: Smegma
   query: ({{{smegma}}}) & {{{noBetaMale}}}
