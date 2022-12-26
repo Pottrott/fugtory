@@ -26,9 +26,11 @@ window.main = () => {
 
   const compilation = true
   const puke = true
-  const highQuality = true
+  const highQuality = "graceful"
+  const allow720p = false
   const images = true
   const vr = true
+  const audio = false
 
   let base = "!censored"
 
@@ -36,12 +38,25 @@ window.main = () => {
     base += " & !invalid.tag"
   }
 
+  if (!audio) {
+    base += " & !audio"
+  }
+
   if (!vr) {
     base += " & !vr & !vr.porn & !virtual.reality"
   }
 
-  if (highQuality) {
-    base += " & (1080p | 1440p | 2160p | 2880p | 4320p | full.hd | 4k | 8k)"
+  if (highQuality === "strict") {
+    base += " & (1080p | 1440p | 2160p | 2880p | 4320p | full.hd | 4k | 8k"
+    if (allow720p)  {
+      base += " | 720p"
+    }
+    base += ")"
+  } else if (highQuality === "graceful") {
+    base += " & !144p & !240p & !320p & !480"
+    if (!allow720p) {
+      base += " & !720p"
+    }
   }
 
   if (!puke) {
