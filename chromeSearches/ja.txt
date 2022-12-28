@@ -1,0 +1,1 @@
+http://10.0.0.20:9117/UI/Dashboard#category=4000,4010,4020&filter=tag%3Awindows&search=%s
