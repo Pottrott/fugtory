@@ -1,15 +1,3 @@
-const removeSnatcheda = () => {
-  const torrents = Array.from(document.querySelectorAll(".torrent")).map(element =>  {
-    const nameElement = element.querySelector("td > a:visited")
-    const iconElement = element.querySelector(".icon")
-    let state = null
-    if (iconElement.classList.contains("icon_disk_grabbed"))
-state = "grabbed"
-      return {state,nameElement}
-  })
-console.dir(torrents)
-}
-
 const removeSnatched = () => {
   GM_addStyle(`
   .torrent:has(a:visited) {
@@ -53,7 +41,7 @@ window.main = () => {
     }
     base += ")"
   } else if (highQuality === "graceful") {
-    base += " & !144p & !240p & !320p & !480"
+    base += " & !144p & !240p & !320p & !480p & !540p"
     if (!allow720p) {
       base += " & !720p"
     }
@@ -95,7 +83,28 @@ window.main = () => {
     return result
   }
 
+  const searchPresets = getYamlResource("searchPresets")
+
+  const urlParams = Object.fromEntries(new URLSearchParams(window.location.search))
+  if (urlParams.preset) {
+    const needle = urlParams.preset.replaceAll(" ", "").toLowerCase()
+    console.log("Searching preset " + needle)
+    for (const searchPreset of searchPresets) {
+      if (searchPreset.name.replaceAll(" ", "").toLowerCase() === needle) {
+        const rawUrl = new URL(`https://${location.host}/torrents.php`)
+        rawUrl.searchParams.append("taglist", resolveQueryRecursive(searchPreset.query))
+        rawUrl.searchParams.append("action", "advanced")
+        rawUrl.searchParams.append("order_by", "time")
+        rawUrl.searchParams.append("order_way", "desc")
+        window.location = rawUrl.toString()
+        return
+      }
+    }
+  }
+
   const tagInput = document.querySelector("form[name=filter]").querySelector("textarea")
+  if (!tagInput)
+  return
   tagInput.addEventListener("keyup", event => { // Doesn't work for some reason
     console.dir(event)
     if (event.keyCode === 13) {
@@ -123,7 +132,6 @@ window.main = () => {
     document.querySelector("#searchPresets").insertAdjacentHTML("beforeEnd", `<div>${link}<a title='${rawQuery}' href=${rawHref}>${options.name}</a> [<a title='${queryWithDefaults}' href=${defaultsHref}>+ defaults</a>]</div>`)
   }
 
-  const searchPresets = getYamlResource("searchPresets")
   const searchPresetsSorted = _.sortBy(searchPresets, "name")
   searchPresetsSorted.unshift({
     name: "Current",
