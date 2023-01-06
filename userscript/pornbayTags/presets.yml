@@ -9,9 +9,9 @@
 - name: Lesbian (+ trans, + solo, + pov)
   query: '{{{povOrSolo}}} | {{{lesbianGraceful}}}'
 - name: Default Pornbay
-  query: ({{{povOrSolo}}}) | ({{{lezdom}}})
+  query: (femdom.pov | humiliation.pov | toilet.pov | cuckold.pov | strap.on.pov | pov.pegging | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.shit | pov.ass.worship | solo | solo.only | solo.female | solo.male | lesbian | lesbian.domination | lesdom | lezdom | transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl) | facefuck | face.fuck | forced.deepthroat | throatfuck | throat.fuck | gagging | crying | torture | rough.oral | scat) & !cunnilingus & !censored & !vr & !virtual.reality & (1080p | full.hd | 2160p | 4k)
 - name: Default Femdomcult
-  query: pov | pov.only | femdom.pov | humiliation.pov | humiliationpov | toilet.pov | cuckold.pov | pov.strap.on  | pov.pegging | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.shit | pov.fucking | cock.pov | pov.forced.cum.eating | pov.ass.worship | joi.pov | solo | solo.only | solo.female | solo.male | lesbian.domination | lesdom | lezdom | transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl
+  query: (pov | pov.only | femdom.pov | humiliation.pov | humiliationpov | toilet.pov | cuckold.pov | pov.strap.on  | pov.pegging | pov.cuckold | pov.facesitting | strapon.pov | transdom.pov | piss.pov | pov.shit | pov.fucking | cock.pov | pov.forced.cum.eating | pov.ass.worship | joi.pov | solo | solo.only | solo.female | solo.male | lesbian.domination | lesdom | lezdom | transgirl.on.female | female.on.female | transgirl.on.transgirl | female.on.transgirl) & {{{defaultFilters}}}
 - name: Clip sites
   query: (manyvids | manyvids.com | scatshop | scatshop.com | apclips | apclips.com | clips4sale | clips4sale.com | iwantclips | iwantclips.com | scatshop | scatshop.com | femscat | femscat.com | scatbook | scatbook.com | pornhub | pornhub.com)
 - name: POV

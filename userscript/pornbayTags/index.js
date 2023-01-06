@@ -17,7 +17,7 @@ window.main = () => {
   const highQuality = "graceful"
   const allow720p = false
   const images = true
-  const vr = true
+  const vr = false
   const audio = false
 
   let base = "!censored"
@@ -66,8 +66,7 @@ window.main = () => {
   }
 
   const segments = getYamlResource("searchSnippets")
-  segments.defaults = base
-
+  segments.defaultFilters = base
 
   const resolveQuery = query => {
     return Handlebars.compile(query)({
@@ -113,23 +112,23 @@ window.main = () => {
     }
   })
 
-  const addSuggestion = options => {
-    const rawQuery = resolveQueryRecursive(options.query)
-    const queryWithDefaults = resolveQueryRecursive(`${options.query} & {{{defaults}}}`)
+  const addSuggestion = searchPreset => {
+    const rawQuery = resolveQueryRecursive(searchPreset.query)
+    const queryWithDefaults = resolveQueryRecursive(`${searchPreset.query} & {{{defaultFilters}}}`)
     const rawUrl = new URL(`https://${location.host}/torrents.php`)
     rawUrl.searchParams.append("taglist", rawQuery)
     rawUrl.searchParams.append("action", "advanced")
     rawUrl.searchParams.append("order_by", "time")
     rawUrl.searchParams.append("order_way", "desc")
     const rawHref = rawUrl.href
-    rawUrl.searchParams.set("taglist", queryWithDefaults)
-    const defaultsHref = rawUrl.href
-    const tagSection = document.querySelector("#cat_list ~table tr:last-child > td:last-child")
+    // rawUrl.searchParams.set("taglist", queryWithDefaults)
+    // const defaultsHref = rawUrl.href
+    // const tagSection = document.querySelector("#cat_list ~table tr:last-child > td:last-child")
     let link = ""
-    if (options.link) {
-      link = `<a href=${options.link}>🔗</a> `
+    if (searchPreset.link) {
+      link = `<a href=${searchPreset.link}>🔗</a> `
     }
-    document.querySelector("#searchPresets").insertAdjacentHTML("beforeEnd", `<div>${link}<a title='${rawQuery}' href=${rawHref}>${options.name}</a> [<a title='${queryWithDefaults}' href=${defaultsHref}>+ defaults</a>]</div>`)
+    document.querySelector("#searchPresets").insertAdjacentHTML("beforeend", `<div>${link}<a title='${rawQuery}' href=${rawHref}>${searchPreset.name}</a></div>`)
   }
 
   const searchPresetsSorted = _.sortBy(searchPresets, "name")
@@ -139,7 +138,12 @@ window.main = () => {
   })
 
   for (const searchPreset of searchPresetsSorted) {
+    if (searchPreset.name.toLowerCase() !== "current")
     addSuggestion(searchPreset)
+    addSuggestion({
+      name: searchPreset.name + " (filtered)",
+      query: `${searchPreset.query} & {{{defaultFilters}}}`
+    })
   }
 
   const foundTags = {}
