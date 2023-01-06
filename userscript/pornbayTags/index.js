@@ -41,7 +41,7 @@ window.main = () => {
     }
     base += ")"
   } else if (highQuality === "graceful") {
-    base += " & !144p & !240p & !320p & !480p & !540p"
+    base += " & !sd & !144p & !240p & !320p & !480p & !540p"
     if (!allow720p) {
       base += " & !720p"
     }
